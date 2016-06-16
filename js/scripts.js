@@ -4,6 +4,7 @@ $(window).load(function(){
   home();
   projects();
   contact();
+  aboutMe();
 });
 
 
@@ -18,7 +19,7 @@ function projects(){
 function home(){
   $('#home').click(function(){
     $('html, body').animate({
-        scrollTop: $("#main").offset().top
+        scrollTop: $("#main").offset().top - 110
     }, 700);
   })
 }
@@ -26,7 +27,15 @@ function home(){
 function contact(){
   $('#contact-one').click(function(){
     $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#contact").offset().top - 100
+    }, 700);
+  })
+}
+
+function aboutMe() {
+  $('#about-me-one').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#about-me").offset().top - 100
     }, 700);
   })
 }
